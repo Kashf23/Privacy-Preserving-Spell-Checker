@@ -76,7 +76,7 @@ To set up and run this project locally (or in a compatible environment like Goog
 
 Click the badge below to open this notebook directly in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kashf23/Privacy-Preserving-Spell-Checker/blob/main/Main Code.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kashf23/Privacy-Preserving-Spell-Checker/blob/main/Main%20Code.ipynb)
 
 **Important Note on Data Access for Colab Users:**
 
