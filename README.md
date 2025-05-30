@@ -46,21 +46,48 @@ To set up and run this project locally (or in a compatible environment like Goog
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/privacy-preserving-spell-checker-aes-lstm.git](https://github.com/yourusername/privacy-preserving-spell-checker-aes-lstm.git)
-    cd privacy-preserving-spell-checker-aes-lstm
+    git clone [https://github.com/Kashf23/privacy-preserving-spell-checker.git](https://github.com/Kashf23/privacy-preserving-spell-checker.git)
+    cd privacy-preserving-spell-checker
     ```
-2.  **Place your dataset:** Ensure your `Final_Dataset.csv` (containing 'typo' and 'correct_word' columns) is in the root directory of the project. (If you moved it from `/content/drive/MyDrive/` as discussed, it should now be directly in your repo.)
-3.  **Install dependencies:**
+* **Install Dependencies:** Make sure you have Python installed, then install all the necessary libraries. It's recommended to do this within a [**virtual environment**](https://docs.python.org/3/library/venv.html) to keep your project's dependencies isolated.
+
     ```bash
-    pip install pandas numpy tensorflow keras pycryptodome jupyter # Add 'jupyter' here
+    python -m venv venv        # Create a virtual environment
+    source venv/bin/activate   # Activate it on Linux/macOS
+    # For Windows: .\venv\Scripts\activate
     ```
-4.  **Launch Jupyter Notebook/Lab:**
+
+    Then install the project dependencies:
     ```bash
-    jupyter notebook  # Or 'jupyter lab'
+    pip install pandas numpy tensorflow keras pycryptodome jupyter ipykernel
     ```
-5.  **Open the Notebook:** In the Jupyter interface that opens in your browser, navigate to your repository folder and click on `Main Code.ipynb`.
-6.  **Run Cells:** Execute all cells in the notebook sequentially. The notebook will handle dataset encryption, model training, and then launch the interactive command-line interface within the notebook output cells for spell checking.
-    The script will first perform dataset encryption, model training, and then launch the interactive command-line interface for spell checking.
+
+* **Place your dataset locally:** Ensure your `Final_Dataset.csv` is in the root directory of the cloned repository.
+* **Launch Jupyter Notebook:**
+
+    ```bash
+    jupyter notebook
+    ```
+    This command will open a browser window displaying the Jupyter interface.
+
+* **Open and Run Your Notebook:** In the Jupyter interface, navigate to your project directory and click on your main notebook file (e.g., `Main Code.ipynb`). Once it opens, you can **run all the cells sequentially** to execute your code, perform training, save files, and interact with the spell checker.
+
+### 2. Running Directly on Google Colaboratory (Recommended for quick setup)
+
+Click the badge below to open this notebook directly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kashf23/Privacy-Preserving-Spell-Checker/blob/main/Main Code.ipynb)
+
+**Important Note on Data Access for Colab Users:**
+
+This notebook is configured to load the `Final_Dataset.csv` from a mounted Google Drive. **To run this project successfully in Colab, you must:**
+
+1.  **Obtain the `Final_Dataset.csv` file.**
+2.  **Upload `Final_Dataset.csv` to your *personal* Google Drive.**
+3.  **Ensure it is placed at the specific path:** `/content/drive/MyDrive/Final_Dataset.csv`.
+4.  **Grant the notebook permission to mount your Google Drive** when prompted in the Colab environment (usually in the first code cell).
+
+Once your Google Drive is mounted and the `Final_Dataset.csv` is in the correct location within *your* Drive, you can **run all the cells sequentially** in the Colab notebook.
 
 ## Project Structure
 ``````.
